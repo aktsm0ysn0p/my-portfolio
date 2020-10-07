@@ -1,0 +1,21 @@
+.main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.portfolios {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+.my-portfolios h1 {
+  text-align: center;
+}
+
+.portfolio {
+  border: 1px solid #C4DDFF;
+  padding: 10px;
+  text-align: center;
+  /* width: 50%; */
+  margin-right: 10px;
+}
