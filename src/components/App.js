@@ -1,57 +1,57 @@
 import React from 'react';
-import logo from '../logo.svg';
 import './App.css';
-// import img from '../img/sample.png';
+import { Work} from './work.js';
+import { Skills } from './skill.js';
+import { About } from './about.js';
+import { Home } from './home.js';
 
-function Portfolio(props) {
-  return (
-    <section className="portfolio">
-      <h2>{props.item.title}</h2>
-      <img src={require('../img/sample.png')} style={{ width: 150, height: 100}}/>
-      <p>使用言語 :{props.item.language}</p>
-      <p>{props.item.explanation}</p>
-      <p>{props.item.url}</p>
-    </section>
-  );
-}
+// function Title() {
+//   return (
+//     <div>
+//       <h1>TAKADA</h1>
+//     </div>
+//   );
+// }
 
-function MyPortfolios() {
-  const items = [
-    { title: 'MySite', img: '../img/sample.png', language: 'HTML/CSS/JavaScript/PHP/MySOL', explanation: '初めての作品です', url: 'url' },
-    { title: 'Todolist', img: '../img/sample.png', language: 'HTML/CSS/JavaScript', explanation: '趣味のの作品です', url: 'url２' },
-  ];
+// function OthersItem(props) {
+//   return (
+//     <li>
+//       {props.other}
+//     </li>
+//   );
+// }
 
-  const portfolio = items.map(item => {
-    return (
-      <Portfolio
-        item={item}
-      />
-    );
-  });
-  return (
-    <div className="my-portfolios">
-      <h1>MyPortfolios</h1>
-      <div className="portfolios">
-        {portfolio}
-      </div>
+// function Others() {
+//   // const others = ['WORK', 'SKILL', 'ABOUT'];
+//   return (
+//     <ul>
+//       {/* <OthersItem /> */}
+//     </ul>
+//   );
+// }
 
-    </div>
-  );
-}
 
-function Main() {
-  return (
-    <div className="main">
-      <MyPortfolios />
-    </div>
-  );
-}
+// function Header() {
+//   return (
+//     <header>
+//       <Title />
+//       <Others />
+//     </header>
+//   );
+// }
+
+
+
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        <Main />
+        {/* <Header /> */}
+        <Home />
+        <Work />
+        <Skills />
+        <About />
       </div>
     );
   }
