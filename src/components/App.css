@@ -36,10 +36,11 @@
   width: 350px;
   min-height: 120px;
   padding: 10px;
-  background-color: #BFDBF2;
+  background-color: #8ED0F5;
+    /* background-color: #BFD0F5; */
 }
 .skill-card h3 {
-  color: #5C91BD;
+  color: #304E5C;
 }
 
 .target-skill {
@@ -47,5 +48,30 @@
   margin: 10px;
   border-radius: 20px;
   padding: 10px;
-  background-color: #DFF097;
+  background-color: #8A9DA8;
+  /* background-color: #BFD0F5; */
+}
+
+
+
+.app-lists {
+  margin: 30px 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  min-width: 160px;
+  font-size: 20px;
+}
+
+.app-list {
+  text-decoration: none;
+  color: #4B575C;
+  user-select: none;
+}
+
+.app-list:hover {
+  background-color: #B4CFDB;
+  color: #ffffff;
 }
