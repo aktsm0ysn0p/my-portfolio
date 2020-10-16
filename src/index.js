@@ -12,10 +12,10 @@ import * as serviceWorker from './serviceWorker';
 ReactDOM.render(
   <Router>
     <AppBar />
-    <Route exact path='/' component={Home} />
-    <Route exact path='/work' component={Work} />
-    <Route exact path='/skill' component={Skills} />
-    <Route path='/About' component={About} />
+    <Route exact path={'/'} component={Home} />
+    <Route exact path={'/work'} component={Work} />
+    <Route exact path={'/skill'} component={Skills} />
+    <Route path={'/About'} component={About} />
   </Router>
     ,document.getElementById('root')
 );
