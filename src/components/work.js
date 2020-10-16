@@ -1,6 +1,7 @@
 import React from 'react';
 import './css/work.css';
 
+
 function Portfolio(props) {
   return (
     <div className="portfolio">
@@ -11,18 +12,18 @@ function Portfolio(props) {
 
 function MyPortfolios() {
   const items = [
-    { title: 'ポートフォリオ', img: '../img/sample.png', language: 'HTML/CSS/JavaScript/PHP/MySOL', explanation: '初めての作品です', url: 'url' },
-    { title: 'Todolist', img: '../img/todolist.png', language: 'HTML/CSS/JavaScript/PHP/MySQL', explanation: 'CRUDアプリです。初作品🐨', url: 'https://mytodolist-app-1.herokuapp.com/' },
+    { title: 'My-Portfolio', img: require('../img/my-portfolio.png'), language: 'React.js', explanation: '初ライブラリ使用作品。Reactを２週間勉強し、５日で作成しました。', url: '' },
+    { title: 'Todolist', img: require('../img/todolist.png'), language: 'HTML/CSS/JavaScript/PHP/MySQL', explanation: '初作品のCRUDアプリ。制作期間１週間。Herokuを使ってデプロイしました。', url: 'https://mytodolist-app-1.herokuapp.com/' },
   ];
 
   const portfolio = items.map( item => {
     return (
       <Portfolio>
         <a href={item.url}>
-          <img src={require('../img/sample.png')} />
+          <img src={item.img} />
           <div className="portfolio-inner">
             <h2>{item.title}</h2>
-            <p>使用言語: {item.language}</p>
+            <p>使用言語／ライブラリ: {item.language}</p>
             <p>{item.explanation}</p>
           </div>
         </a>
