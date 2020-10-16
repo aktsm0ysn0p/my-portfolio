@@ -1,16 +1,11 @@
 import React from 'react';
+import './css/work.css';
 
 function Portfolio(props) {
   return (
-    <a href={props.url} className="portfolio-wrapper">
-      <section className="portfolio">
-        <h2>{props.title}</h2>
-        <img src={require('../img/sample.png')} style={{ width: 150, height: 100 }} />
-        <p>使用言語 :{props.language}</p>
-        <p>{props.explanation}</p>
-        <p>{props.url}</p>
-      </section>
-    </a>
+    <div className="portfolio">
+      {props.children}
+    </div>
   );
 }
 
@@ -20,15 +15,18 @@ function MyPortfolios() {
     { title: 'Todolist', img: '../img/todolist.png', language: 'HTML/CSS/JavaScript/PHP/MySQL', explanation: 'CRUDアプリです。初作品🐨', url: 'https://mytodolist-app-1.herokuapp.com/' },
   ];
 
-  const portfolio = items.map((item, index) => {
+  const portfolio = items.map( item => {
     return (
-      <Portfolio
-        key={index}
-        title={item.title}
-        language={item.language}
-        explanation={item.explanation}
-        url={item.url}
-      />
+      <Portfolio>
+        <a href={item.url}>
+          <img src={require('../img/sample.png')} />
+          <div className="portfolio-inner">
+            <h2>{item.title}</h2>
+            <p>使用言語: {item.language}</p>
+            <p>{item.explanation}</p>
+          </div>
+        </a>
+      </Portfolio>
     );
   });
   return (

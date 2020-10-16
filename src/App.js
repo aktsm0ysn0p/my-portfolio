@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import { Work } from './work.js';
-import { Skills } from './skill.js';
-import { About } from './about.js';
-import { Home } from './home.js';
+import { Work } from './components/work';
+import { Skills } from './components/skill';
+import { About } from './components/about';
+import { Home } from './components/home';
 import { AppBar } from './appbar.js';
 
 

@@ -1,13 +1,15 @@
 import React from 'react';
+import './css/about.css';
 
 function Contact() {
   return (
-    <div>
+    <div className="contact">
       <h2>Contact</h2>
       <div>
         <address>
           <span>aktsm0ysn0p@gmail.com</span>
         </address>
+        <p>※問い合わせフォームは準備中です</p>
       </div>
     </div>
   );
@@ -15,7 +17,7 @@ function Contact() {
 
 function Profile() {
   return (
-    <div>
+    <div className="profile">
       <h2>About Me</h2>
       <div>
         <p>
@@ -44,4 +46,4 @@ function About() {
   );
 }
 
-export { About };
+export {About};

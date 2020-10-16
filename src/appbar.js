@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Work } from './work.js';
-import { Skills } from './skill.js';
-import { About } from './about.js';
-// import { Home } from './home.js';
+import { Work } from './components/work';
+import { Skills } from './components/skill';
+import  About  from './components/about';
 
 function Headerbar(props) {
   return (

@@ -1,0 +1,53 @@
+.portfolio-container h1 {
+  text-align: center;
+}
+
+.portfolio-wrapper {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+.portfolio {
+  border: 1px solid #76BAF0;
+  border-radius: 10px;
+  width: 320px;
+  height: 420px;
+  margin-bottom: 20px;
+  background-color: #B4CFDB;
+}
+
+.portfolio:hover {
+  opacity: .7;
+}
+
+.portfolio a {
+  text-decoration: none;
+}
+.portfolio img {
+  display: block;
+  width: 320px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0 ;
+}
+
+.portfolio-inner {
+  padding: 10px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.portfolio-inner h2 {
+  margin: 18px 0;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.portfolio-inner p {
+  margin: 0 0 5px 0;
+  color: #333333;
+  font-size: 13px;
+}

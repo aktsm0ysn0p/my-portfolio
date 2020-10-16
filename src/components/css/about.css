@@ -1,0 +1,11 @@
+.about-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+.profile, .contact {
+  width: 320px;
+  margin: 10px;
+}
