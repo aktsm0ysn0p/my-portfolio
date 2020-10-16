@@ -2,20 +2,22 @@ import React from 'react';
 
 function Portfolio(props) {
   return (
-    <section className="portfolio">
-      <h2>{props.title}</h2>
-      <img src={require('../img/sample.png')} style={{ width: 150, height: 100 }} />
-      <p>使用言語 :{props.language}</p>
-      <p>{props.explanation}</p>
-      <p>{props.url}</p>
-    </section>
+    <a href={props.url} className="portfolio-wrapper">
+      <section className="portfolio">
+        <h2>{props.title}</h2>
+        <img src={require('../img/sample.png')} style={{ width: 150, height: 100 }} />
+        <p>使用言語 :{props.language}</p>
+        <p>{props.explanation}</p>
+        <p>{props.url}</p>
+      </section>
+    </a>
   );
 }
 
 function MyPortfolios() {
   const items = [
     { title: 'ポートフォリオ', img: '../img/sample.png', language: 'HTML/CSS/JavaScript/PHP/MySOL', explanation: '初めての作品です', url: 'url' },
-    { title: 'Todolist', img: '../img/sample.png', language: 'HTML/CSS/JavaScript', explanation: '趣味のの作品です', url: 'url２' },
+    { title: 'Todolist', img: '../img/todolist.png', language: 'HTML/CSS/JavaScript/PHP/MySQL', explanation: 'CRUDアプリです。初作品🐨', url: 'https://mytodolist-app-1.herokuapp.com/' },
   ];
 
   const portfolio = items.map((item, index) => {
@@ -30,9 +32,9 @@ function MyPortfolios() {
     );
   });
   return (
-    <div className="my-portfolios">
+    <div className="portfolio-container">
       <h1>My Works</h1>
-      <div className="portfolios">
+      <div className="portfolio-wrapper">
         {portfolio}
       </div>
     </div>

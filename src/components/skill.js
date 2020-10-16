@@ -33,8 +33,10 @@ function Skills() {
   return (
     <div className="skill-page">
       <span>独学したで習得したスキル</span>
-      <div className="skill-container">
-        {skillsItem}
+      <div className="sill-container">
+        <div className="skill-wrapper">
+            {skillsItem}
+        </div>
       </div>
       <span>目標</span>
       <div className="target-skill">

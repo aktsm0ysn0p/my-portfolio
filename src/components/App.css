@@ -1,3 +1,7 @@
+h2, h3 {
+  color: #304E5C;
+}
+
 .main {
   width: 80%;
   margin: 0 auto;
@@ -5,25 +9,55 @@
   flex-wrap: wrap; */
 }
 
-.portfolios {
+.portfolio-container {
+  margin: 0 auto;
+  max-width: 50%;
+}
+
+.portfolio-container h1 {
+  text-align: center;
+}
+
+.portfolio-wrapper {
   display: flex;
   flex-wrap: wrap;
   /* justify-content: space-between; */
 }
-.my-portfolios h1 {
-  text-align: center;
-}
+
 
 .portfolio {
   border: 1px solid #76BAF0;
   padding: 10px;
   text-align: center;
   /* width: 50%; */
-  margin-right: 10px;
-  border-radius: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #B4CFDB;
+}
+
+.portfolio:hover {
+  opacity: .7;
+}
+
+.portfolio a {
+  text-decoration: none;
+}
+
+.portfolio p {
+  color: #333333;
 }
 
 .skill-container {
+  /* width: 90%; */
+  margin: 0 auto;
+}
+
+.skill-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.skill-cards {
   display: flex;
   flex-wrap: wrap;
 }
@@ -32,8 +66,8 @@
   display: inline-block;
   border: 1px solid #76BAF0;
   margin: 10px;
-  border-radius: 20px;
-  width: 350px;
+  border-radius: 10px;
+  /* width: 350px; */
   min-height: 120px;
   padding: 10px;
   background-color: #8ED0F5;
@@ -46,7 +80,7 @@
 .target-skill {
   border: 1px solid #76BAF0;
   margin: 10px;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 10px;
   background-color: #8A9DA8;
   /* background-color: #BFD0F5; */
