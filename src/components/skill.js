@@ -19,9 +19,9 @@ function Skills() {
   ];
 
 
-  const skillsItem = skills.map(skill => {
+  const skillsItem = skills.map((skill, index) => {
     return (
-      <Skill>
+      <Skill key={index}>
         <h3>{skill.title}</h3>
         <p>{skill.explanation}</p>
       </Skill>

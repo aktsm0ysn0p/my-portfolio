@@ -46,4 +46,4 @@ function About() {
   );
 }
 
-export {About};
+export { About };

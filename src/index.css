@@ -19,3 +19,34 @@ code {
   margin: 0 auto;
   padding: 20px;
 }
+
+h2, h3 {
+  color: #304E5C;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.app-lists {
+  margin: 30px 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  min-width: 160px;
+  font-size: 20px;
+}
+
+.app-list {
+  text-decoration: none;
+  color: #4B575C;
+  user-select: none;
+}
+
+.app-list:hover {
+  background-color: #B4CFDB;
+  color: #ffffff;
+}
